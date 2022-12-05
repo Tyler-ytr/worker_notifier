@@ -20,7 +20,7 @@ def everyday_notifier():
             shedule_work=temp[1].decode('utf-8') # 防止中文乱码
             shedule_list[shedule_time]=shedule_work
     for shedule_time in shedule_list:
-        print(shedule_time)
+        # print(shedule_time)
         schedule.every().day.at(shedule_time).do(notifier,shedule_work)
 
 
@@ -28,21 +28,9 @@ def everyday_notifier():
 # if __name__ == '__main__':
 #     everyday_notifier()
 
-     
-# toaster = ToastNotifier()
-
-# # 有icon的版本
-# toaster.show_toast("Hello World!!!",
-#                    "Python is 10 seconds awsm!",
-#                    icon_path="custom.ico",
-#                    duration=10)
-
-# # 无icon，采用python的icon，且采用自己的线程
-# toaster.show_toast("Example two",
-#                    "This notification is in it's own thread!",
-#                    icon_path=None,
-#                    duration=5,
-#                    threaded=True)
-
-# # 等待提示框关闭
-# while toaster.notification_active(): time.sleep(0.1)
+# if __name__ == '__main__':
+#     notifier("开始测试")
+#     # help_worker.everyday_notifier()
+#     # while True:
+#     #    schedule.run_pending()
+#     #    time.sleep(30)
