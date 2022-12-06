@@ -2,7 +2,7 @@
 ##  程序功能
 1. 根据shedule.txt里面的配置按时触发windows提醒;
 
-##　环境配置
+## 环境配置
 
 1. `pip install -r requirements.txt`
 2. 配置test.bat`cd \worker\help_worker`为当前目录
