@@ -7,7 +7,13 @@
 1. `pip install -r requirements.txt`
 2. 配置test.bat`cd \worker\help_worker`为当前目录
 3. 需要保证cmd默认的python能够正确使用win_shedule.py 
-4. shedule.txt里的时间格式应该为"09:30"保证有4个数字;
+## 功能配置
+1. shedule.txt用于固定时间的通知;格式如下:
+    ````
+    09:30 干活
+    23:59 睡觉
+    ````
+    需要注意要有四位数字否则shedule会报错;
    
 ##  开机自启配置
 
