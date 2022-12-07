@@ -5,7 +5,7 @@
 ## 环境配置
 
 1. `pip install -r requirements.txt`
-2. 配置test.bat`cd \worker\help_worker`为当前目录
+2. 运行`generate_bat.py`生成test.bat
 3. 需要保证cmd默认的python能够正确使用win_shedule.py 
 
 ## 功能配置
@@ -22,4 +22,4 @@
 2. 输入`shell:startup`
 3. 把test.bat的快捷方式复制进去即可
 
-PS: 需要保证脚本能正常运作；可以在bat末尾加上Pause来调试是否能够正确启动；
+PS: 需要保证`test.bat`脚本能正常运作；可以在bat末尾加上Pause来调试是否能够正确启动；
